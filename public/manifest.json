@@ -1,0 +1,17 @@
+{
+  "name": "Daylee",
+  "short_name": "Daylee",
+  "description": "A calmer way to plan. A notebook-inspired daily task manager designed for students.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F6F3EC",
+  "theme_color": "#F6F3EC",
+  "icons": [
+    {
+      "src": "/daylee-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #2D2B28;
+    background-color: #F6F3EC;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    user-select: none;
+  }
+}
+
+/* Handwriting Fonts */
+.font-patrick {
+  font-family: 'Patrick Hand', cursive;
+  letter-spacing: 0.02em;
+}
+
+.font-kalam {
+  font-family: 'Kalam', cursive;
+  letter-spacing: 0.01em;
+}
+
+.font-caveat {
+  font-family: 'Caveat', cursive;
+  letter-spacing: 0.02em;
+}
+
+/* Paper Styles */
+.paper-plain {
+  background-color: #FDFCF8;
+}
+
+.paper-ruled {
+  background-color: #FDFCF8;
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 37px,
+    rgba(175, 195, 215, 0.35) 38px
+  );
+  background-size: 100% 38px;
+}
+
+.paper-dotgrid {
+  background-color: #FDFCF8;
+  background-image: radial-gradient(
+    rgba(140, 130, 115, 0.28) 1.2px,
+    transparent 1.2px
+  );
+  background-size: 24px 24px;
+}
+
+/* Notebook realistic margins and red margin line */
+.notebook-margin-line {
+  border-left: 1.5px solid rgba(235, 130, 130, 0.32);
+}
+
+/* Hand-drawn strikethrough animation */
+@keyframes strike-draw {
+  0% {
+    width: 0;
+    opacity: 0.3;
+  }
+  100% {
+    width: 102%;
+    opacity: 0.85;
+  }
+}
+
+.animate-strike {
+  animation: strike-draw 0.28s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(160, 150, 135, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(160, 150, 135, 0.5);
+}
