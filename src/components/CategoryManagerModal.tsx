@@ -14,14 +14,14 @@ interface CategoryManagerModalProps {
 }
 
 const PASTEL_PALETTE = [
-  '#6A8E7F', // Sage Green
-  '#5B879E', // Dusty Blue
-  '#8A7BA5', // Lavender
+  '#A9472F', // Terracotta
+  '#704331', // Warm Brown
   '#D77F67', // Warm Peach
   '#C49439', // Soft Mustard
-  '#7C9264', // Olive Pastel
+  '#5B879E', // Dusty Blue
+  '#8A7BA5', // Lavender
   '#A07886', // Dusty Rose
-  '#659591', // Muted Teal
+  '#6A8E7F', // Sage
 ];
 
 export const CategoryManagerModal: React.FC<CategoryManagerModalProps> = ({

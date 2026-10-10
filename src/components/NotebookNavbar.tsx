@@ -50,8 +50,8 @@ export const NotebookNavbar: React.FC<NotebookNavbarProps> = ({
       <div className="flex items-center gap-2 sm:gap-3">
         {/* Invisible sync indicator (Section 12 UX-006 & Section 18) */}
         {!isOffline ? (
-          <div className="hidden sm:flex items-center gap-1.5 text-[11px] text-[#7A8A80] bg-[#EEF4F1] px-2.5 py-1 rounded-full border border-[#D5E4DC]">
-            <CheckCircle2 className="w-3 h-3 text-[#6A8E7F]" />
+          <div className="hidden sm:flex items-center gap-1.5 text-[11px] text-[#7A7367] bg-[#F7F2E7] px-2.5 py-1 rounded-full border border-[#E8DFCF]">
+            <CheckCircle2 className="w-3 h-3 text-[#4A7C59]" />
             <span>Saved automatically</span>
           </div>
         ) : (

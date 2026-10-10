@@ -49,7 +49,7 @@ function broadcastChange(type: 'tasks' | 'categories' | 'settings' | 'user') {
 export const DEFAULT_USER_SETTINGS: UserSettings = {
   paperStyle: 'ruled',
   font: 'patrick',
-  accentColorId: 'sage',
+  accentColorId: 'terracotta',
 };
 
 export function getStoredUser(): User | null {
@@ -79,7 +79,11 @@ export function getStoredSettings(): UserSettings {
   try {
     const raw = localStorage.getItem(STORAGE_KEYS.SETTINGS);
     if (!raw) return DEFAULT_USER_SETTINGS;
-    return { ...DEFAULT_USER_SETTINGS, ...JSON.parse(raw) };
+    const parsed = JSON.parse(raw);
+    if (parsed.accentColorId === 'sage') {
+      parsed.accentColorId = 'terracotta';
+    }
+    return { ...DEFAULT_USER_SETTINGS, ...parsed };
   } catch {
     return DEFAULT_USER_SETTINGS;
   }
@@ -102,7 +106,16 @@ export function getStoredCategories(): Category[] {
       return DEFAULT_CATEGORIES;
     }
     const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) && parsed.length > 0 ? parsed : DEFAULT_CATEGORIES;
+    if (Array.isArray(parsed) && parsed.length > 0) {
+      // Migrate legacy default study category color to terracotta
+      return parsed.map((cat: Category) => {
+        if (cat.id === 'cat-study' && cat.color === '#6A8E7F') {
+          return { ...cat, color: '#A9472F' };
+        }
+        return cat;
+      });
+    }
+    return DEFAULT_CATEGORIES;
   } catch {
     return DEFAULT_CATEGORIES;
   }

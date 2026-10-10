@@ -13,7 +13,7 @@ export const HandwrittenCheckbox: React.FC<HandwrittenCheckboxProps> = ({
   checked,
   onChange,
   disabled = false,
-  accentColor = '#6A8E7F',
+  accentColor = '#A9472F',
 }) => {
   const handleClick = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -34,7 +34,7 @@ export const HandwrittenCheckbox: React.FC<HandwrittenCheckboxProps> = ({
           spread: 45,
           startVelocity: 14,
           origin: { x, y },
-          colors: ['#6A8E7F', '#B6CBC1', '#FAF5EA', '#D77F67', '#8A7BA5', '#EED8AE'],
+          colors: ['#A9472F', '#E8BDB2', '#704331', '#D77F67', '#E8D9C5', '#FAF5EA'],
           disableForReducedMotion: true,
           ticks: 120,
           gravity: 0.8,

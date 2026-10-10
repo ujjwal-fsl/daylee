@@ -145,8 +145,8 @@ export const AuthModal: React.FC<AuthModalProps> = ({
         {/* Content */}
         <div className="p-6 space-y-4 text-[#2D2B28]">
           {/* Cloud Sync Announcement */}
-          <div className="flex items-start gap-2 p-2.5 rounded-xl bg-[#EEF4F1] border border-[#D5E4DC] text-[#2D4E41] text-xs">
-            <Sparkles className="w-4 h-4 shrink-0 text-[#6A8E7F] mt-0.5" />
+          <div className="flex items-start gap-2 p-2.5 rounded-xl bg-[#F9EDE9] border border-[#E8BDB2] text-[#704331] text-xs">
+            <Sparkles className="w-4 h-4 shrink-0 text-[#A9472F] mt-0.5" />
             <p className="leading-snug">
               Sign in with Google or Email to sync all notebook tasks seamlessly across all your devices.
             </p>
@@ -243,7 +243,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full py-2.5 rounded-xl bg-[#6A8E7F] hover:bg-[#5D8072] text-white text-xs font-semibold shadow-xs transition-all active:scale-95 mt-2 disabled:opacity-60 cursor-pointer"
+              className="w-full py-2.5 rounded-xl bg-[#A9472F] hover:bg-[#933D27] text-white text-xs font-semibold shadow-xs transition-all active:scale-95 mt-2 disabled:opacity-60 cursor-pointer"
             >
               {isLoading
                 ? 'Connecting...'
@@ -261,7 +261,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 <button
                   type="button"
                   onClick={() => setMode('register')}
-                  className="text-[#6A8E7F] font-semibold hover:underline cursor-pointer"
+                  className="text-[#A9472F] font-semibold hover:underline cursor-pointer"
                 >
                   Create one
                 </button>
@@ -272,7 +272,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 <button
                   type="button"
                   onClick={() => setMode('login')}
-                  className="text-[#6A8E7F] font-semibold hover:underline cursor-pointer"
+                  className="text-[#A9472F] font-semibold hover:underline cursor-pointer"
                 >
                   Sign in
                 </button>

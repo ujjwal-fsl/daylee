@@ -54,28 +54,20 @@ export interface UserSettings {
 
 export const ACCENT_COLORS: AccentColor[] = [
   {
-    id: 'sage',
-    name: 'Sage Green',
-    hex: '#6A8E7F',
-    light: '#EEF4F1',
-    border: '#B6CBC1',
-    text: '#2D4E41',
+    id: 'terracotta',
+    name: 'Terracotta',
+    hex: '#A9472F',
+    light: '#F9EDE9',
+    border: '#E8BDB2',
+    text: '#704331',
   },
   {
-    id: 'blue',
-    name: 'Dusty Blue',
-    hex: '#5B879E',
-    light: '#EEF4F7',
-    border: '#B2CBD9',
-    text: '#2C4E61',
-  },
-  {
-    id: 'lavender',
-    name: 'Lavender',
-    hex: '#8A7BA5',
-    light: '#F3F0F7',
-    border: '#C9BFD9',
-    text: '#443460',
+    id: 'brown',
+    name: 'Warm Brown',
+    hex: '#704331',
+    light: '#F5ECE6',
+    border: '#D8C2B4',
+    text: '#432619',
   },
   {
     id: 'peach',
@@ -93,10 +85,18 @@ export const ACCENT_COLORS: AccentColor[] = [
     border: '#E8D09E',
     text: '#583F11',
   },
+  {
+    id: 'blue',
+    name: 'Dusty Blue',
+    hex: '#5B879E',
+    light: '#EEF4F7',
+    border: '#B2CBD9',
+    text: '#2C4E61',
+  },
 ];
 
 export const DEFAULT_CATEGORIES: Category[] = [
-  { id: 'cat-study', name: 'Study', color: '#6A8E7F', isDefault: true },
+  { id: 'cat-study', name: 'Study', color: '#A9472F', isDefault: true },
   { id: 'cat-personal', name: 'Personal', color: '#5B879E', isDefault: true },
   { id: 'cat-reading', name: 'Reading', color: '#8A7BA5', isDefault: true },
   { id: 'cat-health', name: 'Health', color: '#D77F67', isDefault: true },

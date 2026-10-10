@@ -752,7 +752,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F6F3EC] text-[#2D2B28] flex flex-col font-sans selection:bg-[#EAE1D0]">
+    <div className="min-h-screen bg-[#F6F3EC] text-[#302923] flex flex-col font-sans selection:bg-[#E8D9C5] selection:text-[#302923]">
       {/* Offline notification banner */}
       <OfflineBanner isOffline={isOffline} />
 

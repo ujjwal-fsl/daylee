@@ -198,11 +198,13 @@ export const TaskInput: React.FC<TaskInputProps> = ({
             title="Configure repeating task"
             className={`p-1.5 rounded-full border transition-colors shrink-0 ${
               repeatType !== 'none'
-                ? 'border-[#B6CBC1] text-[#2D4E41]'
+                ? 'border-[#E8BDB2] text-[#704331]'
                 : 'border-[#DDD4C4] text-[#8E887E] hover:text-[#2D2B28]'
             }`}
             style={{
               backgroundColor: repeatType !== 'none' ? `${accentColor}18` : '#FFFDF9',
+              borderColor: repeatType !== 'none' ? `${accentColor}50` : undefined,
+              color: repeatType !== 'none' ? accentColor : undefined,
             }}
           >
             <Repeat className="w-4 h-4" />

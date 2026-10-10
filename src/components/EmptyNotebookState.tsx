@@ -18,7 +18,7 @@ export const EmptyNotebookState: React.FC<EmptyNotebookStateProps> = ({
   searchQuery,
   onClearSearch,
   isWelcomeState = false,
-  accentColor = '#6A8E7F',
+  accentColor = '#A9472F',
   onAddFirstTask,
 }) => {
   const fontClass =
@@ -43,7 +43,8 @@ export const EmptyNotebookState: React.FC<EmptyNotebookStateProps> = ({
         <button
           type="button"
           onClick={onClearSearch}
-          className="mt-2 text-xs text-[#6A8E7F] hover:underline font-medium"
+          className="mt-2 text-xs hover:underline font-medium cursor-pointer"
+          style={{ color: accentColor }}
         >
           Clear search
         </button>

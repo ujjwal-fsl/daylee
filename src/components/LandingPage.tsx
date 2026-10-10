@@ -129,7 +129,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           <button
             type="button"
             onClick={onEnterGuestDemo}
-            className="text-xs font-medium text-[#6A8E7F] hover:text-[#527164] underline underline-offset-4 cursor-pointer"
+            className="text-xs font-medium text-[#A9472F] hover:text-[#933D27] underline underline-offset-4 cursor-pointer"
           >
             Explore Demo as Guest
           </button>
@@ -140,7 +140,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       <main className="flex-1 max-w-4xl mx-auto px-6 py-6 md:py-12 flex flex-col items-center text-center">
         {/* Calm Pill Badge */}
         <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#EBE4D5] text-[#5A5449] text-xs font-medium mb-5">
-          <Feather className="w-3.5 h-3.5 text-[#6A8E7F]" />
+          <Feather className="w-3.5 h-3.5 text-[#A9472F]" />
           <span>Notebook-Inspired Daily Planner for Students</span>
         </div>
 
@@ -156,7 +156,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         {/* Central Auth Notebook Card */}
         <div className="mt-8 w-full max-w-md bg-[#FFFDF9] rounded-2xl md:rounded-3xl shadow-[0_12px_36px_rgb(0,0,0,0.08)] border border-[#E5DEC9] overflow-hidden text-left relative">
           {/* Notebook Binding Stitch effect */}
-          <div className="h-1.5 bg-[#6A8E7F]/60 w-full" />
+          <div className="h-1.5 bg-[#A9472F]/70 w-full" />
 
           {/* Mode Switcher Tabs */}
           <div className="flex border-b border-[#EFE8DA] bg-[#FAF6EE]">
@@ -168,7 +168,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               }}
               className={`flex-1 py-3 text-xs font-semibold text-center transition-colors cursor-pointer ${
                 authMode === 'login'
-                  ? 'text-[#2D2B28] border-b-2 border-[#6A8E7F] bg-[#FFFDF9]'
+                  ? 'text-[#2D2B28] border-b-2 border-[#A9472F] bg-[#FFFDF9]'
                   : 'text-[#8A8478] hover:text-[#2D2B28]'
               }`}
             >
@@ -182,7 +182,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               }}
               className={`flex-1 py-3 text-xs font-semibold text-center transition-colors cursor-pointer ${
                 authMode === 'register'
-                  ? 'text-[#2D2B28] border-b-2 border-[#6A8E7F] bg-[#FFFDF9]'
+                  ? 'text-[#2D2B28] border-b-2 border-[#A9472F] bg-[#FFFDF9]'
                   : 'text-[#8A8478] hover:text-[#2D2B28]'
               }`}
             >
@@ -192,8 +192,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({
 
           <div className="p-6 space-y-4">
             {/* Sync Notice */}
-            <div className="flex items-start gap-2.5 p-3 rounded-xl bg-[#EEF4F1] border border-[#D5E4DC] text-[#2D4E41] text-xs">
-              <Sparkles className="w-4 h-4 shrink-0 text-[#6A8E7F] mt-0.5" />
+            <div className="flex items-start gap-2.5 p-3 rounded-xl bg-[#F9EDE9] border border-[#E8BDB2] text-[#704331] text-xs">
+              <Sparkles className="w-4 h-4 shrink-0 text-[#A9472F] mt-0.5" />
               <div className="leading-snug">
                 <strong className="font-semibold">Cloud Sync Active:</strong> Your tasks, categories, and handwritten styles automatically sync across all logged-in devices.
               </div>
@@ -290,7 +290,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full py-2.5 rounded-xl bg-[#6A8E7F] hover:bg-[#5D8072] text-white text-xs font-semibold shadow-xs transition-all active:scale-98 mt-1 disabled:opacity-60 cursor-pointer"
+                className="w-full py-2.5 rounded-xl bg-[#A9472F] hover:bg-[#933D27] text-white text-xs font-semibold shadow-xs transition-all active:scale-98 mt-1 disabled:opacity-60 cursor-pointer"
               >
                 {isLoading
                   ? 'Opening Notebook...'
@@ -323,14 +323,14 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             </div>
             <div className="font-patrick text-2xl sm:text-3xl font-bold text-[#2D2B28] flex items-center justify-between pb-3">
               <span>← Today's Tasks →</span>
-              <span className="text-xs font-sans font-normal px-2.5 py-1 rounded-full bg-[#6A8E7F]/15 text-[#2D4E41]">
+              <span className="text-xs font-sans font-normal px-2.5 py-1 rounded-full bg-[#A9472F]/15 text-[#704331]">
                 Ruled Paper
               </span>
             </div>
 
             <div className="space-y-3 pt-2">
               <div className="flex items-center gap-3 text-lg font-patrick text-[#2D2B28]">
-                <span className="w-5 h-5 rounded-md border-2 border-[#6A8E7F] flex items-center justify-center text-xs text-[#6A8E7F] font-bold">
+                <span className="w-5 h-5 rounded-md border-2 border-[#A9472F] flex items-center justify-center text-xs text-[#A9472F] font-bold">
                   ✓
                 </span>
                 <span className="text-[#8E887E] line-through">Review Physics Chapter 4 formulas</span>
@@ -359,7 +359,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         {/* 3 Calming Pillars */}
         <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6 w-full text-left">
           <div className="p-5 rounded-2xl bg-[#FFFDF9]/80 border border-[#E8E1D2] space-y-2">
-            <div className="w-8 h-8 rounded-xl bg-[#6A8E7F]/15 text-[#2D4E41] flex items-center justify-center font-bold text-sm">
+            <div className="w-8 h-8 rounded-xl bg-[#A9472F]/15 text-[#704331] flex items-center justify-center font-bold text-sm">
               1
             </div>
             <h3 className="font-semibold text-[#2D2B28] text-base">Handwriting & Paper</h3>
